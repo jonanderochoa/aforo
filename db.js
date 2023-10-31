@@ -1,12 +1,13 @@
 const mysql = require("mysql");
+const { localhost, databaseName, user, password } = require("config");
 
 class Db {
   createConnection() {
     return mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "root",
-      database: "scrapper",
+      host: localhost,
+      user: user,
+      password: password,
+      database: databaseName,
     });
   }
 
