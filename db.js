@@ -3,7 +3,7 @@ const { HOST, DATABASE, USER, PASSWORD } = require("./config.json");
 
 class Db {
   createConnection() {
-    return mysql.createConnection({
+      return mysql.createConnection({
       host: HOST,
       user: USER,
       password: PASSWORD,
