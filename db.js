@@ -1,13 +1,13 @@
 const mysql = require("mysql");
-const { localhost, databaseName, user, password } = require("config");
+const { HOST, DATABASE, USER, PASSWORD } = require("./config.json");
 
 class Db {
   createConnection() {
     return mysql.createConnection({
-      host: localhost,
-      user: user,
-      password: password,
-      database: databaseName,
+      host: HOST,
+      user: USER,
+      password: PASSWORD,
+      database: DATABASE,
     });
   }
 

@@ -6,7 +6,7 @@ const db = new Db();
 const CRON_MIN = "* * * * *";
 const CRON_HOUR = "0 10-21 * * *";
 
-cron.schedule(CRON_HOUR, () => {
+cron.schedule(CRON_MIN, () => {
   try {
     saveAforoInDb();
   } catch (error) {

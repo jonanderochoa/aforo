@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-const URL = "https://sputnikclimbing.deporsite.net/aforo-berango";
+const { URL } = require("./config.json");
 
 class Scrapper {
   async obtenerContenido() {
